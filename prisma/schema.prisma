@@ -28,21 +28,21 @@ enum MessageRole {
   ASSISTANT
 }
 
-enum MessageRoleType {
+enum MessageType {
   RESULT
   ERROR
 }
 
 model Message {
-  id        String          @id @default(uuid())
+  id        String      @id @default(uuid())
   content   String
   role      MessageRole
-  type      MessageRoleType
-  createdAt DateTime        @default(now())
-  updatedAt DateTime        @updatedAt
+  type      MessageType
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
   fragment  Fragment?
   projectId String
-  project   Project         @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  project   Project     @relation(fields: [projectId], references: [id], onDelete: Cascade)
 }
 
 model Fragment {
