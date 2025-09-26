@@ -1,7 +1,7 @@
 import { inngest } from "@/inngest/client";
 import prisma from "@/lib/db";
 import { baseProcedure, createTRPCRouter } from "@/trpc/init";
-import z from "zod";
+import { z } from "zod";
 
 // message.create
 export const messagesRouter = createTRPCRouter({
