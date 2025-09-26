@@ -65,13 +65,22 @@ const ProjectHeader = ({ projectId }: Props) => {
             <DropdownMenuPortal>
               <DropdownMenuSubContent>
                 <DropdownMenuRadioGroup value={theme} onValueChange={setTheme}>
-                  <DropdownMenuRadioItem value="light">
+                  <DropdownMenuRadioItem
+                    className="hover:cursor-pointer"
+                    value="light"
+                  >
                     <span>Light</span>
                   </DropdownMenuRadioItem>
-                  <DropdownMenuRadioItem value="dark">
+                  <DropdownMenuRadioItem
+                    className="hover:cursor-pointer"
+                    value="dark"
+                  >
                     <span>Dark</span>
                   </DropdownMenuRadioItem>
-                  <DropdownMenuRadioItem value="system">
+                  <DropdownMenuRadioItem
+                    className="hover:cursor-pointer"
+                    value="system"
+                  >
                     <span>System</span>
                   </DropdownMenuRadioItem>
                 </DropdownMenuRadioGroup>
