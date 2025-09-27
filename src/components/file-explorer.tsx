@@ -85,7 +85,6 @@ const FileBreadCrumb = ({ filePath }: FileBreadCrumbProps) => {
 interface FileExplorerProps {
   files: FileCollection;
 }
-
 export const FileExplorer = ({ files }: FileExplorerProps) => {
   const [selectedFile, setSelectedFile] = useState<string | null>(() => {
     const fileKeys = Object.keys(files);

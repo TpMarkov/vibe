@@ -54,7 +54,7 @@ export function convertFilesToTreeItems(
 
     for (const [key, value] of entries) {
       if (value === null) {
-        // This is a file
+        // It's a file
         children.push(key);
       } else {
         const subTree = convertNode(value, key);
