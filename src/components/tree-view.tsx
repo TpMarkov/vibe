@@ -2,43 +2,53 @@ import { TreeItem } from "@/types";
 
 import {
   Sidebar,
+  SidebarContent,
   SidebarGroup,
   SidebarGroupContent,
   SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuSub,
   SidebarProvider,
   SidebarRail,
+  SidebarMenuSub,
+  SidebarMenuButton,
   SidebarMenuItem,
 } from "./ui/sidebar";
-import { ChevronRightIcon, FileIcon, FolderIcon } from "lucide-react";
-import { Collapsible, CollapsibleTrigger } from "./ui/collapsible";
-import { CollapsibleContent } from "@radix-ui/react-collapsible";
+import { ChevronRightIcon, FileIcon, FolderHeartIcon } from "lucide-react";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "./ui/collapsible";
 
-interface TreeViewProps {
+interface Props {
   data: TreeItem[];
-  value?: string | null;
+  value?: string;
   onSelect?: (value: string) => void;
 }
-export const TreeView = ({ data, value, onSelect }: TreeViewProps) => {
+
+export const TreeView = ({ data, value, onSelect }: Props) => {
   return (
     <SidebarProvider>
       <Sidebar collapsible="none" className="w-full">
-        <SidebarGroup>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              {data.map((item, index) => (
-                <Tree
-                  item={item}
-                  key={index}
-                  selectedValue={value}
-                  onSelect={onSelect}
-                  parentPath=""
-                />
-              ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
+        <SidebarContent>
+          <SidebarGroup>
+            <SidebarGroupContent>
+              <SidebarMenu>
+                {data.map((item, index) => {
+                  return (
+                    <Tree
+                      key={index}
+                      item={item}
+                      onSelect={onSelect}
+                      selectedValue={value}
+                      parentPath=""
+                    />
+                  );
+                })}
+              </SidebarMenu>
+            </SidebarGroupContent>
+          </SidebarGroup>
+        </SidebarContent>
+        <SidebarRail />
       </Sidebar>
     </SidebarProvider>
   );
@@ -50,8 +60,9 @@ interface TreeProps {
   onSelect?: (value: string) => void;
   parentPath: string;
 }
-const Tree = ({ item, onSelect, selectedValue, parentPath }: TreeProps) => {
+const Tree = ({ item, selectedValue, onSelect, parentPath }: TreeProps) => {
   const [name, ...items] = Array.isArray(item) ? item : [item];
+
   const currentPath = parentPath ? `${parentPath}/${name}` : name;
 
   if (!items.length) {
@@ -68,7 +79,8 @@ const Tree = ({ item, onSelect, selectedValue, parentPath }: TreeProps) => {
       </SidebarMenuButton>
     );
   }
-  //It's a folder
+
+  // It's a folder
   return (
     <SidebarMenuItem>
       <Collapsible
@@ -78,7 +90,7 @@ const Tree = ({ item, onSelect, selectedValue, parentPath }: TreeProps) => {
         <CollapsibleTrigger asChild>
           <SidebarMenuButton>
             <ChevronRightIcon className="transition-transform" />
-            <FolderIcon />
+            <FolderHeartIcon />
             <span className="truncate">{name}</span>
           </SidebarMenuButton>
         </CollapsibleTrigger>
@@ -97,7 +109,6 @@ const Tree = ({ item, onSelect, selectedValue, parentPath }: TreeProps) => {
             })}
           </SidebarMenuSub>
         </CollapsibleContent>
-        <SidebarRail />
       </Collapsible>
     </SidebarMenuItem>
   );
