@@ -1,13 +1,16 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+
 import { useTRPC } from "@/trpc/client";
+
+import { useUser } from "@clerk/nextjs";
 
 import { useQuery } from "@tanstack/react-query";
 
 import { Button } from "@/components/ui/button";
-import { useUser } from "@clerk/nextjs";
-import { formatDistanceToNow } from "date-fns";
+
+import { formatDistanceToNow } from "date-fns/formatDistanceToNow";
 
 const ProjectsList = () => {
   const trpc = useTRPC();
