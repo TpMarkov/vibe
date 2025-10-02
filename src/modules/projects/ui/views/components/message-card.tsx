@@ -17,7 +17,7 @@ interface AssistantMessageProps {
   fragment: Fragment | null;
   createdAt: Date;
   isActiveFragment: boolean;
-  onFragmentClick: (fragment: Fragment | null) => void;
+  onFragmentClick: (fragment: Fragment) => void;
   type: MessageType;
 }
 
@@ -34,7 +34,7 @@ const FragmentCard = ({
 }: FragmentCardProps) => {
   return (
     <button
-      onClick={() => onFragmentClick(fragment)}
+      onClick={() => fragment && onFragmentClick(fragment)}
       className={cn(
         "flex items-start text-start gap-2 border rounded-lg bg-muted w-fit p-3 hover:bg-secondary transition-colors",
         isActiveFragment &&
