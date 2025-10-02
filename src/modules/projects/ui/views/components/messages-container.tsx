@@ -5,6 +5,7 @@ import MessageCard from "./message-card";
 import { MessageForm } from "./message-form";
 import { Fragment } from "@/generated/prisma";
 import MessageLoading from "./message-loading";
+import { REFETCH_INTERVAL } from "./types";
 
 interface Props {
   projectId: string;
@@ -27,8 +28,7 @@ const MessagesContainer = ({
         projectId: projectId,
       },
       {
-        // TODO: Temporary refatch messages
-        refetchInterval: 5000,
+        refetchInterval: REFETCH_INTERVAL,
       }
     )
   );
