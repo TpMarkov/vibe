@@ -17,7 +17,7 @@ interface AssistantMessageProps {
   fragment: Fragment | null;
   createdAt: Date;
   isActiveFragment: boolean;
-  onFragmentClick: (fragment: Fragment) => void;
+  onFragmentClick: (fragment: Fragment | null) => void;
   type: MessageType;
 }
 
