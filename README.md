@@ -45,12 +45,6 @@ This project is built with a cutting-edge tech stack to ensure performance, scal
 ![Generation Placeholder](https://i.ibb.co/dzTQknq/dashboard2.png)
 ![Generation Placeholder](https://i.ibb.co/7LhsSxr/dashboard1.png)
 
-### How to Add Your Own Images:
-1. Take screenshots of your application.
-2. Store them in a `public/images` folder (or upload them to an image hosting service).
-3. Replace the placeholder links above with your actual image paths (e.g., `![Dashboard View](/images/dashboard.png)`).
-4. Keep image sizes optimized for web performance.
-
 ## 💻 Getting Started
 
 Follow these instructions to set up the project locally.
