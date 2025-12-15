@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vibe Coding Assistant
 
 Welcome to **Vibe Coding Assistant**, a powerful and intuitive platform designed to empower users to build applications and websites simply by chatting with AI.
@@ -94,3 +95,6 @@ Follow these instructions to set up the project locally.
    ```
 
    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+=======
+
+>>>>>>> 96ac7604c750fb0f01087843abde4fc74e75eda4
