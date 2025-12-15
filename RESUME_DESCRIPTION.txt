@@ -1,0 +1,13 @@
+# Project: Vibe Coding Assistant
+
+**Description:**
+Designed and developed **Vibe Coding Assistant**, an AI-powered platform that enables users to build full-stack web applications through natural language prompts. The system leverages generative AI to automate code scaffolding, component creation, and deployment processes, significantly reducing development time for MVPs and prototypes.
+
+**Key Technologies:**
+Next.js 15, TypeScript, Tailwind CSS, Prisma, tRPC, Clerk (Auth), Inngest (Event/Job Queue), Radix UI, Vercel Deployment.
+
+**Core Contributions:**
+- Architecture: Built a scalable Next.js App Router application integrated with a type-safe tRPC API layer.
+- AI Integration: Implemented agentic workflows using Inngest and AI SDKs to interpret user intent and generate code files.
+- UI/UX: Crafted a responsive, modern interface using Tailwind CSS and Radix UI primitives for a premium user experience.
+- Backend: Managed database schemas with Prisma and orchestrated background jobs for complex code generation tasks.

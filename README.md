@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vibe Coding Assistant
 
-## Getting Started
+Welcome to **Vibe Coding Assistant**, a powerful and intuitive platform designed to empower users to build applications and websites simply by chatting with AI.
 
-First, run the development server:
+Check out the live application here: [Vibe Coding Assistant](https://vibe-eta-orpin.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 About the Project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Vibe Coding Assistant is an AI-powered developement environment that bridges the gap between idea and implementation. It allows users to describe their vision in natural language, and the AI handles the complex coding, scaffolding, and deployment processes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Who is this for?**
+- **Developers:** Speed up prototyping and boilerplate generation.
+- **Entrepreneurs:** MVP creation without deep technical knowledge.
+- **Learners:** Understand how modern web apps are structured and built.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Key Benefits:**
+- **Rapid Development:** sensitive reduction in time-to-market.
+- **User-Friendly:** Interface designed for natural conversation.
+- **Modern Stack:** Built on the latest, most robust web technologies.
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+This project is built with a cutting-edge tech stack to ensure performance, scalability, and developer experience:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) & [Radix UI](https://www.radix-ui.com/)
+- **Authentication:** [Clerk](https://clerk.com/)
+- **Database API:** [Prisma](https://www.prisma.io/)
+- **API Layer:** [tRPC](https://trpc.io/)
+- **Asynchronous Jobs:** [Inngest](https://www.inngest.com/)
+- **AI/Agents:** @e2b/code-interpreter, @inngest/agent-kit
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📸 Functionality & Screenshots
 
-## Deploy on Vercel
+*(Add your screenshots here to showcase the UI. Below are placeholders as requested.)*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Dashboard View**
+> The main interface where users interact with the AI.
+![Dashboard Placeholder](https://placehold.co/300x200?text=Dashboard+View)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Project Generation**
+> Watch as Vibe builds your project in real-time.
+![Generation Placeholder](https://placehold.co/300x200?text=Project+Generation)
+
+### How to Add Your Own Images:
+1. Take screenshots of your application.
+2. Store them in a `public/images` folder (or upload them to an image hosting service).
+3. Replace the placeholder links above with your actual image paths (e.g., `![Dashboard View](/images/dashboard.png)`).
+4. Keep image sizes optimized for web performance.
+
+## 💻 Getting Started
+
+Follow these instructions to set up the project locally.
+
+### Prerequisites
+- Node.js (v20+ recommended)
+- npm or pnpm
+- A localized database (or connection string)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd vibe
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   pnpm install
+   ```
+
+3. **Set up Environment Variables:**
+   Create a `.env` file in the root directory and populate it with necessary keys (Clerk, Database URL, etc.).
+   ```env
+   DATABASE_URL="your_database_url"
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="your_key"
+   CLERK_SECRET_KEY="your_secret"
+   # ... other keys
+   ```
+
+4. **Initialize Database:**
+   ```bash
+   npx prisma generate
+   npx prisma db push
+   ```
+
+5. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
