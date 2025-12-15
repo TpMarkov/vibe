@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Vibe Coding Assistant
 
 Welcome to **Vibe Coding Assistant**, a powerful and intuitive platform designed to empower users to build applications and websites simply by chatting with AI.
@@ -37,12 +37,13 @@ This project is built with a cutting-edge tech stack to ensure performance, scal
 *(Add your screenshots here to showcase the UI. Below are placeholders as requested.)*
 
 **Dashboard View**
-> The main interface where users interact with the AI.
-![Dashboard Placeholder](https://placehold.co/300x200?text=Dashboard+View)
+
+![Dashboard Placeholder](https://i.ibb.co/TMFqFryj/home.png)
 
 **Project Generation**
-> Watch as Vibe builds your project in real-time.
-![Generation Placeholder](https://placehold.co/300x200?text=Project+Generation)
+
+![Generation Placeholder](https://i.ibb.co/dzTQknq/dashboard2.png)
+![Generation Placeholder](https://i.ibb.co/7LhsSxr/dashboard1.png)
 
 ### How to Add Your Own Images:
 1. Take screenshots of your application.
