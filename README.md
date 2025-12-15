@@ -28,7 +28,7 @@ Check out the live application here: [https://signalist-stock-market.vercel.app]
 ## Screenshots
 Below are snippets of the application in action:
 
-![Homepage Screenshot](./screenshots/homepage.png)
+![Homepage Screenshot](https://i.ibb.co/TMFqFryj/home.png)
 *Homepage Dashboard*
 
 ![Analysis View](./screenshots/analysis.png)
@@ -36,13 +36,6 @@ Below are snippets of the application in action:
 
 ![Signals Panel](./screenshots/signals.png)
 *Real-time Trading Signals*
-
-### How to Add Screenshots
-To update these images:
-1. Create a folder named `screenshots` in the root of the repository.
-2. Upload your images (recommended under 200KB).
-3. Update the paths in this README to match your filenames (e.g., `./screenshots/your-image.png`).
-4. *Tip:* Keep images around 300px width for optimal mobile viewing on GitHub.
 
 ## Getting Started for Developers
 Follow these instructions to set up the project locally.
