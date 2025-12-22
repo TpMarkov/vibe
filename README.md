@@ -44,7 +44,6 @@ This project is built with a cutting-edge tech stack to ensure performance, scal
 
 ## 📸 Functionality & Screenshots
 
-*(Add your screenshots here to showcase the UI. Below are placeholders as requested.)*
 
 **Dashboard View**
 
