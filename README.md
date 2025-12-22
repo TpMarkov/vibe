@@ -1,6 +1,16 @@
 
 # Vibe Coding Assistant
 
+A powerful, AI-driven development environment that enables users to build full-stack applications and websites simply by chatting. Built with Next.js 15, Vibe streamlines the journey from idea to deployment with an intuitive, conversational interface.
+
+![Next.js](https://img.shields.io/badge/Next.js-15.2-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)
+![React](https://img.shields.io/badge/React-19.0-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=flat-square&logo=tailwind-css)
+![Prisma](https://img.shields.io/badge/Prisma-6.16-2D3748?style=flat-square&logo=prisma)
+![Clerk](https://img.shields.io/badge/Clerk-6.23-6C47FF?style=flat-square&logo=clerk)
+![tRPC](https://img.shields.io/badge/tRPC-11.4-2596be?style=flat-square&logo=trpc)
+
 Welcome to **Vibe Coding Assistant**, a powerful and intuitive platform designed to empower users to build applications and websites simply by chatting with AI.
 
 Check out the live application here: [Vibe Coding Assistant](https://vibe-eta-orpin.vercel.app/)
